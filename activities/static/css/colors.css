@@ -1,0 +1,35 @@
+td{
+  height :200px;
+  width:200px;
+  text-align : center;
+  border: 5px solid black;
+  font-size: 100px;
+}
+
+body{
+  background-image: linear-gradient(to left top, #81fb7b, #78fb73, #6efb6b, #63fb62, #56fb59, #41f163, #29e76b, #00dd71, #00c57f, #00ad85, #009482, #1d7b77);
+}
+
+.jumbotron {
+    background: rgba(204, 204, 204, 0.5);
+}
+
+#see{
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 3px 2px red;
+  font-size: 70px;
+  font-variant-position: sub
+}
+
+#fo{
+  font-family: 'Roboto', sans-serif;
+  text-shadow : 3px 2px red;
+  font-style: italic;
+  font-stretch: normal;
+  font-size: 70px;
+  font-variant-position: sub;
+}
+
+table, tr, td {
+  border: 3px solid black;
+}

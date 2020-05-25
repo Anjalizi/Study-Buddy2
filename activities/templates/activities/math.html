@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/math.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.css">
+
+{% endblock %}
+
+{% block content %}
+
+<section id="hero">
+	<div class="hero-container container">
+		<h1>Thomas and Math</h1><br>
+		<h2 style="color: #f4c842">Let Us Have Some Fun With Numbers!<br>Perform the following operations. Best Of Luck! <span class="glyphicon glyphicon-thumbs-up"></span></h2>
+		<div id="div1" style="font-weight: 900; font-size: 20px">
+			<div class="app"> 
+				<div class="input-single">
+					<textarea id="note-textarea" type="reset" placeholder="Answer" rows="1"></textarea>
+				</div>   
+				<button id="start-record-btn">Speak</button>
+				<button id="pause-record-btn" title="Pause Recording">Submit</button>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="{% static 'js/math.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+{% endblock %}

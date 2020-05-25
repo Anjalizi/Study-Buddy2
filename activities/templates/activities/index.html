@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Study Buddy!</h1>
+
+<h2>Your child's best friend <3</h2>
+
+{% if user.is_authenticated %}
+	<h3>You are signed in as {{ request.user.username }}</h3>
+{% endif %}
+
+{% endblock %}

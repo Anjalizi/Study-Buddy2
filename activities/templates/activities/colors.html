@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+
+<link rel="stylesheet" href="{% static 'css/colors.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+{% endblock %}
+
+{% block content %}
+<div class="container">
+	<h1 id="see" align='center'>Thomas and Colors!</h1>
+    <h1 align='center'>Select Pictures Having Red Color!</h1>
+    <br>
+
+  <table id="tab" align ='center'>
+    <tr>
+      <td> <img id="one"src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Strawberries.jpg/1200px-Strawberries.jpg" alt="LOADING IMAGE" width="190" height="190"></td>
+      <td ><img id="two"src="https://ae01.alicdn.com/kf/HTB1GEBwbjfguuRjy1zeq6z0KFXaS/1pcs-Doraemon-Nobi-Nobita-Toy-figure-Nobita-Pvc-Action-Figures-Toys-15cm-Box-Packaged-Retail-Free.jpg_640x640.jpg" alt="LOADING IMAGE" width="190" height="190"></td>
+      <td><img id="three"src="https://static.independent.co.uk/s3fs-public/styles/story_medium/public/indy100/bkxLRrwYqgW/25426-1yh1bw8.jpg" alt="LOADING IMAGE" width="190" height="190"></td>
+    </tr>
+
+    <tr>
+      <td><img id="four"src="https://www.bourncreative.com/wp-content/uploads/2010/10/black.jpg" alt="LOADING IMAGE" width="190" height="190"></td>
+      <td><img id="five"src="https://images-na.ssl-images-amazon.com/images/I/61iQ1ph8o4L._SL1000_.jpg" alt="LOADING IMAGE" width="190" height="190"></td>
+      <td><img id="six"src="https://cdn1.vectorstock.com/i/1000x1000/56/25/star-icon-yellow-sign-object-vector-24495625.jpg" alt="LOADING IMAGE" width="190" height="190"></td>
+    </tr>
+
+    <tr>
+      <td><img id="seven"src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Bob_the_Builder_ride%2C_Sainsbury%27s_north_London.jpg/789px-Bob_the_Builder_ride%2C_Sainsbury%27s_north_London.jpg" alt="LOADING IMAGE" width="190" height="190"></td>
+      <td><img id="eight"src="http://www.vespa.in/images/ourchoice/Vespa_red_banner101.png" alt="LOADING IMAGE" width="190" height="190"></td>
+      <td><img id="nine"src="https://images-na.ssl-images-amazon.com/images/I/71lnQdxlWzL._SX466_.jpg" alt="LOADING IMAGE" width="190" height="190"></td>
+    </tr>
+
+  </table>
+
+<div id="d"class="text-center"><button class="btn btn-primary btn-lg" type="button">Get Marks!</button></div>
+
+</div>
+<script src = "{% static 'js/colors.js' %}"></script>
+
+<h1 id="fo" align='center'>Your Marks: <span id="myText"></span></h1>
+
+{% endblock %}
