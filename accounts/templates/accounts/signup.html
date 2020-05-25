@@ -2,31 +2,42 @@
 
 {% block content %}
 
-<h1>Sign Up!</h1>
+<section id="hero" style=" width: 100%;
+height: 100vh; 
+background: url(https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/3758/9780375802799.jpg) top center;
+opacity: 0.85;
+background-size: contain;
+background-repeat: no-repeat;">
 
-{% if error %}
-{{ error }}
-<br><br>
-{% endif %}
+	<div id="container" style="font-weight: 1000; margin-left: 600px; margin-bottom: 10px;">
 
-<!-- url format is '<app_name>:<url_name>' url_name is given with url regex -->
-<!-- in form action 'signup' is the name of the url we go to on submit (specified in urls.py)  -->
-<form method="POST" action="{% url 'accounts:signup' %}">
-	{% csrf_token %}
-	Parent Name: <br>
-	<input type="text" name="username">
-	<br> Password: <br>
-	<input type="password" name="password1">
-	<br> Confirm Password: <br>
-	<input type="password" name="password2">
-	<br> Email ID: <br>
-	<input type="email" name="email">
-	<br> Child's Name <br>
-	<input type="text" name="child_name">
-	<br> Child's Age <br>
-	<input type="text" name="child_age">
-	<br><br>
-	<input class="btn btn-primary" type="submit">
-</form>
+		<h1 style="font-size: 60px; margin-left: -50px;">Sign Up!</h1>
+
+		{% if error %}
+		{{ error }}
+		<br><br>
+		{% endif %}
+
+		<!-- url format is '<app_name>:<url_name>' url_name is given with url regex -->
+		<!-- in form action 'signup' is the name of the url we go to on submit (specified in urls.py)  -->
+		<form method="POST" action="{% url 'accounts:signup' %}" style="width: 200px ;margin-top: 220px; margin-left: -20px; color: rgb(157, 255, 0);font-size: larger; text-align: center;">
+			{% csrf_token %}
+			Parent Name: <br>
+			<input type="text" name="username">
+			<br> Password: <br>
+			<input type="password" name="password1">
+			<br> Confirm Password: <br>
+			<input type="password" name="password2">
+			<br> Email ID: <br>
+			<input type="email" name="email">
+			<br> Child's Name <br>
+			<input type="text" name="child_name">
+			<br> Child's Age <br>
+			<input type="text" name="child_age">
+			<br><br>
+			<input class="btn btn-primary" type="submit">
+		</form>
+	</div>
+</section>
 
 {% endblock %}

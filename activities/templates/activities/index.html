@@ -1,13 +1,28 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.css">
+
+{% endblock %}
+
 
 {% block content %}
 
-<h1>Study Buddy!</h1>
+<section id="hero">
+	<div class="hero-container container">
+		<h1>Study Buddy!</h1>
 
-<h2>Your child's best friend <3</h2>
 
-{% if user.is_authenticated %}
-	<h3>You are signed in as {{ request.user.username }}</h3>
-{% endif %}
+		<h2>Your child's best friend <3</h2>
+
+				{% if user.is_authenticated %}
+				<h3>You are signed in as {{ request.user.username }}</h3>
+				{% endif %}
+	</div>
+
+</section>
 
 {% endblock %}

@@ -4,26 +4,27 @@
 {% block head %}
 
 <title>Thomas and Rhymes</title>
-<link rel="stylesheet" href="{% static 'css/english.css' %}">
+<link rel="stylesheet" href="{% static 'css/rhyme.css' %}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.css">
 
 {% endblock %}
 
 {% block content %}
-
-<div class="container">
-    <h1>Thomas and Rhymes</h1>
-    <div class="app"> 
-        <h3>Let's recite a rhyme together!</h3>
-        <button id="listen-rhyme" title="Start Listening">Listen</button>
-        <div class="input-single">
-            <textarea id="note-textarea" type="reset" placeholder="Answer" rows="1"></textarea>
-        </div>         
-        <!-- <button id="bol-question" title="bolo question">Listen to Question</button> -->
-        <button id="start-record-btn" title="Start Recording">Start Recognition</button>
-        <button id="check-answer" title="check answer">Evaluate</button>
+<section id="hero_rhyme">
+    <div class="container">
+        <h1>Thomas and Rhymes</h1>
+        <div class="app">
+            <h3>Let's recite a rhyme together!</h3>
+            <button id="listen-rhyme" title="Start Listening">Listen</button>
+            <div class="input-single">
+                <textarea id="note-textarea" type="reset" placeholder="Answer" rows="1"></textarea>
+            </div>
+            <!-- <button id="bol-question" title="bolo question">Listen to Question</button> -->
+            <button id="start-record-btn" title="Start Recording">Start Recognition</button>
+            <button id="check-answer" title="check answer">Evaluate</button>
+        </div>
     </div>
-</div>
+</section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="{% static 'js/rhyme.js' %}"></script>
