@@ -9,4 +9,5 @@ urlpatterns = [
     path('math', views.math, name='math'),
     path('colors', views.colors, name='colors'),
     path('comprehension', views.comprehension, name='comprehension'),
+    path('rhyme', views.rhyme, name='rhyme'),
 ]

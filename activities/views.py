@@ -12,3 +12,6 @@ def colors(request):
 
 def comprehension(request):
 	return render(request, 'activities/english.html')
+
+def rhyme(request):
+	return render(request, 'activities/rhymes.html')
